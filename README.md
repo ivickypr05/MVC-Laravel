@@ -15,7 +15,7 @@ Campus : Universitas Catur Insan Cendekia
 
 ## Screenshot Results
 
-<img src="public/assets/img/results.png" alt="Screenshot-Results">
+<img src="public/assets/image/results.png" alt="Screenshot-Results">
 
 ## About Laravel
 
