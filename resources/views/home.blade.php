@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MVC_Vicky</title>
 </head>
 <body>
     <div>
@@ -15,27 +15,23 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-header">
-                        <h3 class="card-tittle">Data Barang</h3>
+                        <h3 class="card-tittle">Model View Controller - Iko Vicky Pratama - Universitas Catur Insan Cendekia</h3>
                     </div>
                     <div class="card-body">
-                     <nav>
-                            <a class="btn btn-success btn-md" href="/tambahdata/databarang"><i class="fa fa-plus"></i> Add new Data</a>
-                            <button type="button" class="btn btn-primary float-right"><i class="fas fa-plus"></i>Print</button>
-                        </nav>
                     <br>
                 <table class="table table-bordered table-striped">
                     <thread>
                         <tr>
-                            <th colspan="9"><center>Data Barang</center></th></tr>
+                            <th colspan="9"><center>Data Barang</center></th>
+                        </tr>
                         <tr>
-                            <th>No</th>
-                            <th>Kode Barang</th>
-                            <th>Nama Barang</th>
-                            <th>Jenis Barang</th>
-                            <th>Harga</th>
-                            <th>Jumlah</th>
-                            <th>Gambar</th>
-                            <th>Action</th>
+                            <th><center>No</th>
+                            <th><center>Kode Barang</th>
+                            <th><center>Nama Barang</th>
+                            <th><center>Jenis Barang</th>
+                            <th><center>Harga</th>
+                            <th><center>Jumlah</th>
+                            <th><center>Gambar</th>
                         </tr>
                         </thread>
                         <tbody>
@@ -48,12 +44,7 @@
                         <td>{{$data->jenis_barang }}</td>
                         <td>Rp.{{number_format ($data->harga) }},-</td>
                         <td>{{$data->jumlah }}</td>
-                        <td><img src="{{url('assets/image/'.$data->foto)}}" width="70px"> </td>
-                        <td>
-                            <a href="/tambahdata/detailbarang/{{$data->id_barang}}" class="btn btn-xs btn-danger">Detail</a>
-                            <a href="/tambahdata/editbarang/{{$data->id_barang}}" class="btn btn-xs btn-warning">Edit</a>
-                            <a href="/tambahdata/destroy/{{$data->id_barang}}" class="btn btn-xs btn-success" onclick="return confirm('Are u Sure?');">Delete</a>
-                            </td>
+                        <td><img src="{{url('assets/image/'.$data->foto)}}" width="90px"> </td>
                     </tr>
                 @endforeach
                     </tbody>
